@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+    <h2>Formulario HTML</h2>
+    <form action="register.php" method="get">
+        <label>Nome:</label>
+        <input type="text">
+    </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="text" name="age">
+        </div>
+        <div>
+            <label for="job">selecione sua profissao</label>
+            <select name="job" >
+                <option value="programador">programador</option>
+                <option value ="tester">tester/qa</option>
+                <option value="DevOps">DevOps</option>
+            </select>
+        </div>
+        <div>
+            <label for="contract">Contrato</label>
+            <select name="contract">
+                <option value="Sim">Sim</option>
+                <option value="Nao" selected >Nao</option>
+            </select>
+        </div>
+        <div>
+            <label for="itens">Selecione a Fruta</label>
+            <select name="Frutas" multiple>
+                <option value="Maca">Maca</option>
+                <option value="pera">Pera</option>
+                <option value="Manga">Manga</option>
+                <option value="Maca">Maca</option>
+                <option value="pera">Pera</option>
+                <option value="Manga">Manga</option>
+            </select>
+        </div>
+        <div>
+            <label for="Comentario"> Escreva abaixo</label>
+            <textarea name="comentario" ></textarea>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Preencha os dados</legend>
+                <label for="name1">Nome</label>
+                <input type="text" name="name1" >
+                <label for="name2">Sobrenome</label>
+                <input type="text" name="name2" >
+            </fieldset>
+        </div>
+        <div>
+            <label for="sabor">Escolha o sabor</label>
+            <input type="text" list="sabor" name="sabor">
+            
+            <datalist id="sabor">
+                <option value="cheddar"></option>
+                <option value="catu"></option>
+                <option value="sem sabor"></option>
+            </datalist>
+
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    
+</body>
+</html>
